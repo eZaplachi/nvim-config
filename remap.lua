@@ -14,6 +14,7 @@ map('n', '<Leader>fs', ':Ex<CR>')
 map('n', '<Leader>nt', ':NERDTree<CR>')
 map('n', '<Leader>nf', ':Neoformat<CR>')
 map('n', '<Leader>tb', ':TagbarToggle<CR>')
+map('n', '<Leader>~', ':TerminalTab fish<CR>')
 map('n', '<Leader>ps', ':w<CR>:so<CR>:PackerSync<CR>')
 
 -- Workman remap

@@ -49,6 +49,9 @@ return require('packer').startup(function(use)
   use 'p00f/nvim-ts-rainbow'
   use 'preservim/tagbar'
   use 'vim-airline/vim-airline'
+  use 'ap/vim-css-color'
+  use 'tc50cal/vim-terminal'
+  use 'terryma/vim-multiple-cursors'
   use 'folke/tokyonight.nvim'
   -- use 'foo2/bar2.nvim'
 
