@@ -15,4 +15,6 @@ vim.opt.list = true
 vim.opt.smartindent = true
 vim.opt.wrap = true
 
+vim.opt.so = 3
+
 vim.g.mapleader = " "
