@@ -25,7 +25,7 @@
 
 ### Insert Mode 
 
-> - [jj] -> [<Esc>]
+> - [jj] -> [\<Esc>]
 
 ### Normal Mode 
 
