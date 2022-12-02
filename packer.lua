@@ -14,6 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   -- My plugins here
+  -- LSP and autocomplete
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -23,6 +24,8 @@ return require('packer').startup(function(use)
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'williamboman/mason.nvim'
+  -- Code highlighting and linting
   use {
         'nvim-treesitter/nvim-treesitter',
         run = function()
@@ -30,11 +33,13 @@ return require('packer').startup(function(use)
             ts_update()
         end,
     }
-  use 'dmerejkowsky/vim-ale'
-  use 'sbdchd/neoformat'
+  use 'luochen1990/rainbow'
+  use 'p00f/nvim-ts-rainbow'
   use 'tpope/vim-commentary'
+  -- Git
   use 'tpope/vim-fugitive'
   use 'airblade/vim-gitgutter'
+  -- Telescope
   use 'nvim-lua/plenary.nvim'
   use 'BurntSushi/ripgrep'
   use {
@@ -43,17 +48,22 @@ return require('packer').startup(function(use)
   requires = { {'nvim-lua/plenary.nvim'} }
 }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use 'Raimondi/delimitMate'
-  use 'preservim/nerdtree'
-  use 'luochen1990/rainbow'
-  use 'p00f/nvim-ts-rainbow'
-  use 'preservim/tagbar'
-  use 'vim-airline/vim-airline'
-  use 'ap/vim-css-color'
-  use 'tc50cal/vim-terminal'
+ -- Vim funcionalities
+  use 'ggandor/leap.nvim'
   use 'terryma/vim-multiple-cursors'
+  use 'akinsho/toggleterm.nvim'
+  use "mbbill/undotree"
+  use 'uga-rosa/ccc.nvim'
+  use 'Raimondi/delimitMate'
+  -- Styling
+  use 'vim-airline/vim-airline'
+  use 'vim-airline/vim-airline-themes'
+  -- File managments
+  use 'preservim/nerdtree'
+  use 'preservim/tagbar'
   use 'folke/tokyonight.nvim'
-  -- use 'foo2/bar2.nvim'
+  -- Miscellaneous
+  use 'ThePrimeagen/vim-be-good'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

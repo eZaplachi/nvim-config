@@ -1,21 +1,27 @@
 -- Functional wrapper for map('n', 'ping custom keybindings
-function map(mode, lhs, rhs, opts)
-    local options = { noremap = true }
-    if opts then
-        options = vim.tbl_extend("force", options, opts)
-    end
-    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
+local map = require("zaplachi.utils").map
 
 map("i", "jj", "<Esc>")
 
-map('n', '<Leader>wq', ':wqall<CR>')
+map('n', '<Leader>ne', '<C-W><Right><CR>')
+map('n', '<Leader>th', '<C-W><Left><CR>')
+
+map("n", "<C-Up>", ":resize -2<CR>", opts)
+map("n", "<C-Down>", ":resize +2<CR>", opts)
+map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
+
+map('n', '<Leader>w', ':w<CR>')
+map('n', '<Leader>wq', ':wq<CR>:qall<CR>')
+map('n', '<Leader>fq', ':q!<CR>')
 map('n', '<Leader>fs', ':Ex<CR>')
+map('n', '<Leader>fm', ':lua vim.lsp.buf.format({async = true})<CR>')
 map('n', '<Leader>nt', ':NERDTree<CR>')
-map('n', '<Leader>nf', ':Neoformat<CR>')
 map('n', '<Leader>tb', ':TagbarToggle<CR>')
-map('n', '<Leader>~', ':TerminalTab fish<CR>')
+map('n', '<Leader>lsp', ':Mason<CR>')
 map('n', '<Leader>ps', ':w<CR>:so<CR>:PackerSync<CR>')
+map('n', '<Leader>vbg', ':VimBeGood<CR>')
 
 -- Workman remap
 map('n', 'l', 'o')
@@ -38,4 +44,25 @@ map('n', 'h', 'y')
 map('o', 'h', 'y')
 map('n', 'y', 'h')
 map('n', 'H', 'Y')
-map('n', 'Y', 'H')
+
+map('v', 'Y', 'H')
+map('v', 'l', 'o')
+map('v', 'o', 'l')
+map('v', 'L', 'O')
+map('v', 'O', 'L')
+map('v', 'j', 'n')
+map('v', 'n', 'j')
+map('v', 'J', 'N')
+map('v', 'N', 'J')
+map('v', 'gn', 'gj')
+map('v', 'gj', 'gn')
+map('v', 'k', 'e')
+map('v', 'e', 'k')
+map('v', 'K', 'E')
+map('v', 'E', '<nop>')
+map('v', 'gk', 'ge')
+map('v', 'ge', 'gk')
+map('v', 'h', 'y')
+map('v', 'y', 'h')
+map('v', 'H', 'Y')
+map('v', 'Y', 'H')
