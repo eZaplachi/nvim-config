@@ -37,4 +37,5 @@ comment.setup {
         location = location,
       }
     end
-  end,
+  end
+} 
