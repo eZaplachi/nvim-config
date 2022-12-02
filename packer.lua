@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   -- Code highlighting and linting
   use {
         'nvim-treesitter/nvim-treesitter',
@@ -35,7 +36,9 @@ return require('packer').startup(function(use)
     }
   use 'luochen1990/rainbow'
   use 'p00f/nvim-ts-rainbow'
-  use 'tpope/vim-commentary'
+  use "numToStr/Comment.nvim"
+  use "folke/todo-comments.nvim"
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   -- Git
   use 'tpope/vim-fugitive'
   use 'airblade/vim-gitgutter'
