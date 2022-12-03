@@ -3,6 +3,8 @@ local map = require("zaplachi.utils").map
 
 map("i", "jj", "<Esc>")
 
+map('n', '<Leader>ny', '<C-W><Up><CR>')
+map('n', '<Leader>tg', '<C-W><Right><CR>')
 map('n', '<Leader>ne', '<C-W><Right><CR>')
 map('n', '<Leader>th', '<C-W><Left><CR>')
 

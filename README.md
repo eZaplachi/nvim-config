@@ -31,6 +31,8 @@
 
 #### Window Managment
 
+> - [\<Space>ny] -> Jump up split
+> - [\<Space>tg] -> Jump down split
 > - [\<Space>ne] -> Jump right split
 > - [\<Space>th] -> Jump left split
 
