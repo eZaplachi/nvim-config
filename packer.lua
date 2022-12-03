@@ -52,7 +52,6 @@ return require('packer').startup(function(use)
 }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
  -- Vim funcionalities
-  use 'terryma/vim-multiple-cursors'
   use 'akinsho/toggleterm.nvim'
   use "mbbill/undotree"
   use 'uga-rosa/ccc.nvim'

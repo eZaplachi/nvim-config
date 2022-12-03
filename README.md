@@ -39,7 +39,8 @@
 > - [\<Ctrl-Left>] -> Resize -Horizontal
 > - [\<Ctrl-Right>] -> Resize +Horizontal
 
-> - [\<Ctrl-\\>] -> Tab Termintal
+> - [\<Ctrl-\\>] -> Tab Terminal
+> - [\<Ctrl-\\n>] -> Tab to the n'th terminal
 
 #### File Managment
 
