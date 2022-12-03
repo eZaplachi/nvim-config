@@ -68,6 +68,13 @@
 > - [\<Space>t9] -> Tabnine settings
 > - [\<Space>vbg] -> Vim practice
 
+#### Git
+
+> - [\<Space>ga] -> Git add all
+> - [\<Space>gc] -> Git commit
+> - [\<Space>gec] -> Git add all and commit
+> - [\<Space>gp] -> Git push
+
 #### Workman 
 
 > - h,j,k,l <--> y,n,e,o
