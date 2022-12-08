@@ -14,7 +14,7 @@ vim.opt.listchars = {space = '␣', extends = '>', precedes = '<'}
 vim.opt.list = true
 
 vim.opt.smartindent = true
-vim.opt.wrap = true
+vim.opt.wrap = false
 
 vim.opt.so = 3
 
