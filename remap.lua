@@ -4,12 +4,12 @@ local map = require("zaplachi.utils").map
 map("i", "jj", "<Esc>")
 
 map('n', '<Leader>ny', '<C-W><Up><CR>')
-map('n', '<Leader>tg', '<C-W><Right><CR>')
 map('n', '<Leader>ne', '<C-W><Right><CR>')
+map('n', '<Leader>tg', '<C-W><Down><CR>')
 map('n', '<Leader>th', '<C-W><Left><CR>')
 
-map("n", "<C-Up>", ":resize -2<CR>", opts)
-map("n", "<C-Down>", ":resize +2<CR>", opts)
+map("n", "<C-Up>", ":resize +2<CR>", opts)
+map("n", "<C-Down>", ":resize -2<CR>", opts)
 map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
@@ -25,12 +25,13 @@ map('n', '<Leader>fm', ':lua vim.lsp.buf.format({async = true})<CR>')
 map('n', '<Leader>nt', ':NERDTree<CR>')
 map('n', '<Leader>tb', ':TagbarToggle<CR>')
 map('n', '<Leader>ut', ':UndotreeToggle<CR>')
+map('n', '<Leader>cp', ':CccPick<CR>')
 map('n', '<Leader>t9', ':CmpTabnineHub<CR>')
 map('n', '<Leader>lsp', ':Mason<CR>')
 
 map('n', '<Leader>ga', ':Git add .<CR>')
 map('n', '<Leader>gc', ':Git commit<CR>')
-map('n', '<Leader>gec', ':Git add .<CR>:Git commit')
+map('n', '<Leader>gec', ':Git add .<CR> :Git commit<CR>')
 map('n', '<Leader>gp', ':Git push<CR>')
 
 map('n', '<Leader>ps', ':w<CR>:so<CR>:PackerSync<CR>')

@@ -36,8 +36,8 @@
 > - [\<Space>ne] -> Jump right split
 > - [\<Space>th] -> Jump left split
 
-> - [\<Ctrl-Up>] -> Resize -Vertical
-> - [\<Ctrl-Down>] -> Resize +Vertical
+> - [\<Ctrl-Up>] -> Resize +Vertical
+> - [\<Ctrl-Down>] -> Resize -Vertical
 > - [\<Ctrl-Left>] -> Resize -Horizontal
 > - [\<Ctrl-Right>] -> Resize +Horizontal
 
@@ -64,9 +64,17 @@
 > - [\<Space>fb] -> Buffers
 > - [\<Space>fh] -> Help tags
 
+#### Misc
+
 > - [\<Space>ps] -> Add to Scope and Packer Sync
 > - [\<Space>t9] -> Tabnine settings
 > - [\<Space>vbg] -> Vim practice
+> - [\<Space>cp] -> Colour Picker
+>> - [q] -> Quit
+>> - [i] -> Change input mode
+>> - [o] -> Change output mode
+>> - Increase: l / d / , (1 / 5 / 10)
+>> - Decrease: h / s / m (1 / 5 / 10)
 
 #### Git
 
