@@ -82,6 +82,7 @@
 > - [\<Space>gc] -> Git commit
 > - [\<Space>gec] -> Git add all and commit
 > - [\<Space>gp] -> Git push
+> - [\<Space>gep] -> Git add all and commit then push
 
 #### Workman 
 

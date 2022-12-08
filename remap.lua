@@ -33,6 +33,7 @@ map('n', '<Leader>ga', ':Git add .<CR>')
 map('n', '<Leader>gc', ':Git commit<CR>')
 map('n', '<Leader>gec', ':Git add .<CR> :Git commit<CR>')
 map('n', '<Leader>gp', ':Git push<CR>')
+map('n', '<Leader>gep', ':Git add .<CR> :Git commit<CR> :Git push<CR>')
 
 map('n', '<Leader>ps', ':w<CR>:so<CR>:PackerSync<CR>')
 map('n', '<Leader>vbg', ':VimBeGood<CR>')
