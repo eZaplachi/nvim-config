@@ -16,7 +16,13 @@ vim.opt.list = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
 
-vim.opt.so = 3
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
+vim.opt.termguicolors = true
+
+vim.opt.so = 8
+vim.opt.colorcolum = "80"
 
 vim.opt.modifiable = true
 

@@ -1,26 +1,48 @@
 -- Functional wrapper for map('n', 'ping custom keybindings
 local map = require("zaplachi.utils").map
 
+-- Insert Mode
 map("i", "jj", "<Esc>")
 
-map('n', '<Leader>ny', '<C-W><Up><CR>')
-map('n', '<Leader>ne', '<C-W><Right><CR>')
-map('n', '<Leader>tg', '<C-W><Down><CR>')
-map('n', '<Leader>th', '<C-W><Left><CR>')
+-- Move Commands
+map('v', 'N', ":m '>+1<CR>gv=gv")
+map('v', 'E', ":m '>-2<CR>gv=gv")
+
+-- Centering of jumps
+map('n', '<C-d>', '<C-d>zz')
+map('n', '<C-u>', '<C-u>zz')
+
+map('n', 'j', 'jzzzv')
+map('n', 'J', 'jzzzv')
+
+-- Window Controls
+map('n', '<Leader><C-e>', '<C-W><Up><CR>')
+map('n', '<Leader><C-o>', '<C-W><Right><CR>')
+map('n', '<Leader><C-n>', '<C-W><Down><CR>')
+map('n', '<Leader><C-y>', '<C-W><Left><CR>')
 
 map("n", "<C-Up>", ":resize +2<CR>", opts)
 map("n", "<C-Down>", ":resize -2<CR>", opts)
 map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+-- Clipboard
+map('n', '<Leader>h', '\'+h')
+map('n', '<Leader>H', '\'+H')
+map('v', '<Leader>h', '\'+h')
 
+map('n', '<Leader>d', '\'_d')
+map('v', '<Leader>d', '\'_d')
+
+-- File Management
 map('n', '<Leader>w', ':w<CR>')
 map('n', '<Leader>wq', ':wq<CR>:wq<CR>')
 map('n', '<Leader>waq', ':wqa<CR>:wqall<CR>')
+map('n', '<Leader>q', ':q<CR>')
 map('n', '<Leader>dq', ':q!<CR>')
 map('n', '<Leader>daq', ':qall!<CR>')
 
-map('n', '<Leader>fs', ':Ex<CR>')
+-- Packages
 map('n', '<Leader>fm', ':lua vim.lsp.buf.format({async = true})<CR>')
 map('n', '<Leader>nt', ':NERDTree<CR>')
 map('n', '<Leader>tb', ':TagbarToggle<CR>')
@@ -34,6 +56,7 @@ map('n', '<Leader>gc', ':Git commit<CR>')
 map('n', '<Leader>gec', ':Git add .<CR> :Git commit<CR>')
 map('n', '<Leader>gp', ':Git push<CR>')
 map('n', '<Leader>gep', ':Git add .<CR> :Git commit<CR> :Git push<CR>')
+
 
 map('n', '<Leader>ps', ':w<CR>:so<CR>:PackerSync<CR>')
 map('n', '<Leader>vbg', ':VimBeGood<CR>')

@@ -3,4 +3,7 @@ if not status_ok then
     return
 end
 
+require("zaplachi.lsp.lsp")
 require("zaplachi.lsp.mason")
+require("zaplachi.lsp.lsp-inlaysints")
+require("zaplachi.lsp.null-ls")

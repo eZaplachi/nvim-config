@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
+  use "lvimuser/lsp-inlayhints.nvim"
   -- Code highlighting and linting
   use {
         'nvim-treesitter/nvim-treesitter',
@@ -35,7 +36,6 @@ return require('packer').startup(function(use)
         end,
     }
   use 'luochen1990/rainbow'
-  use 'p00f/nvim-ts-rainbow'
   use "numToStr/Comment.nvim"
   use "folke/todo-comments.nvim"
   use 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -59,12 +59,13 @@ return require('packer').startup(function(use)
   -- Styling
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
+  use 'folke/tokyonight.nvim'
   -- File managments
   use 'preservim/nerdtree'
   use 'preservim/tagbar'
-  use 'folke/tokyonight.nvim'
   -- Miscellaneous
   use 'ThePrimeagen/vim-be-good'
+  use "folke/which-key.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
