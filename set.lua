@@ -22,7 +22,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.so = 8
-vim.opt.colorcolum = "80"
+--vim.opt.colorcolumn = "80"
 
 vim.opt.modifiable = true
 

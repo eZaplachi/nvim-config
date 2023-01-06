@@ -5,8 +5,8 @@ local map = require("zaplachi.utils").map
 map("i", "jj", "<Esc>")
 
 -- Move Commands
-map('v', 'N', ":m '>+1<CR>gv=gv")
-map('v', 'E', ":m '>-2<CR>gv=gv")
+map('v', '<A-Down>', ":m '>+1<CR>gv=gv")
+map('v', '<A-Up>', ":m '>-2<CR>gv=gv")
 
 -- Centering of jumps
 map('n', '<C-d>', '<C-d>zz')
