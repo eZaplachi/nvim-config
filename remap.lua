@@ -36,7 +36,7 @@ map('v', '<Leader>d', '\'_d')
 
 -- File Management
 map('n', '<Leader>w', ':w<CR>')
-map('n', '<Leader>wq', ':wq<CR>:wq<CR>')
+map('n', '<Leader>wq', ':wq<CR>')
 map('n', '<Leader>waq', ':wqa<CR>:wqall<CR>')
 map('n', '<Leader>q', ':q<CR>')
 map('n', '<Leader>dq', ':q!<CR>')
