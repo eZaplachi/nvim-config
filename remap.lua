@@ -4,7 +4,7 @@ local map = require("zaplachi.utils").map
 -- Insert Mode
 map("i", "jj", "<Esc>")
 
--- Move Commands
+-- Move Commands *Only works for one line*
 map('v', '<A-Down>', ":m '>+1<CR>gv=gv")
 map('v', '<A-Up>', ":m '>-2<CR>gv=gv")
 

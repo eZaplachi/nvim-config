@@ -19,7 +19,7 @@ vim.opt.wrap = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.termguicolors = true
+--vim.opt.termguicolors = true
 
 vim.opt.so = 8
 --vim.opt.colorcolumn = "80"
